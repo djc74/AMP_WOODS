@@ -2,10 +2,34 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-0.1.js"></script>
     <title>The Tower In The Woods</title>
+    <link rel="canonical" href="woods.html">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-0.1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <style amp-custom>
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
-    
+    <amp-story standalone bookend-config-src="bookend.json">
+        <amp-story-page id="cover">
+            <amp-story-grid-layer template="fill">
+                <amp-image 
+                src="assets/cover.jpg"
+                width="720"
+                height="1280"
+                layout="responsive"
+                >
+                </amp-image>
+            </amp-story-grid-layer>
+            <amp-story-grid-layer template="vertical">
+                <h1>The Tower In The Woods</h1>
+            </amp-story-grid-layer>
+        </amp-story-page>
+    </amp-story>
 </body>
 </html>
